@@ -1,0 +1,105 @@
+<p style="text-align: center;"><img src="https://videos.syc-chile.cl/wp-content/uploads/2021/08/logo-sence-fondo-blanco.png" alt="" width="496" height="208" role="presentation" class="img-fluid atto_image_button_text-bottom" style="font-size: 0.875rem;"></p>
+<p style="text-align: center;"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+        ¡Inicia sesión sence aquí!</button>
+
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+
+</p>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <center><img src="https://videos.syc-chile.cl/wp-content/uploads/2021/08/logo-sence-fondo-blanco.png" class="img-rounded" alt="Cinque Terre" width="200" height="80"></center>
+                <form action="https://www.syc-chile.cl/sence/sencenuevo.php" method="post" target="_blank" autocomplete="off">
+                    <div class="form-group row">
+                        <label for="Rut" class="col-sm-2 col-form-label">Rut</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="Rut" aria-describedby="emailHelp" required="" oninput="checkRut(this)" name="RunAlumno" autofocus="" autocomplete="off" minlength="9" maxlength="10" pattern="\d{3,8}-[\d|kK]{1}" placeholder="Ingresar rut con guión y sin puntos">
+
+                            <!-- acá ingresar CodSence -->
+                            <p><input type="hidden" name="CodSence" value="1238008244"></p>
+                        </div>
+                    </div>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Grupos</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <!-- acá poner CodCurso -->
+                                    <input class="form-check-input" type="radio" name="CodigoCurso" id="gridRadios1" value="6071806" checked="">
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Grupo 1
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="CodigoCurso" id="gridRadios2" value="6071805">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Grupo 2
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<p style="text-align: center;"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal2">
+        ¡Cierra sesión sence aquí!</button>
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+</p>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesión</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <center><img src="https://videos.syc-chile.cl/wp-content/uploads/2021/08/logo-sence-fondo-blanco.png" class="img-rounded" alt="Cinque Terre" width="200" height="80"></center>
+                <form action="https://www.syc-chile.cl/sence/bd/proceso.php" method="post" target="_blank" autocomplete="off">
+                    <div class="form-group row">
+                        <label for="Rut" class="col-sm-2 col-form-label">Rut</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="Rut" aria-describedby="emailHelp" required="" oninput="checkRut(this)" name="RunAlumno" autofocus="" autocomplete="off" minlength="9" maxlength="10" pattern="\d{3,8}-[\d|kK]{1}" placeholder="Ingresar rut con guión y sin puntos">
+
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>
